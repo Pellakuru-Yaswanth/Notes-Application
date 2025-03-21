@@ -1,0 +1,229 @@
+body{
+  background-color: grey;
+}
+
+.home{
+  margin-top: 70px;
+}
+
+.todo-list {
+  font-family: Arial, sans-serif;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.todo-list .todo-item {
+  list-style-type: none;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgb(134, 134, 134);
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid #eee;
+  border-radius: 10px;
+  background-color: white;
+  align-items: left;
+  max-height: 500px;
+  overflow: hidden;
+  transition: all ease;
+  transition-duration: 1s;
+}
+
+.todo-list button {
+  background-color:rgb(247, 76, 113);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  justify-content: right;
+}
+
+.todo-list button:hover {
+  background-color: #c82333;
+}
+
+.todo-item:hover{
+  background-color:beige;
+  transform: scale(1.05);
+}
+
+.todo-item .todo-title{
+  text-align: left;
+  overflow-wrap: break-word;
+  max-width: 400px;
+  font-weight: bold;
+  max-height: 20px;
+  overflow: hidden;
+  transition: all ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.todo-listitem{
+  list-style-type: none;
+  padding: 5px;
+  margin-top: 10px;
+  box-shadow: 0 0 10px rgb(128, 126, 126);
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  align-items: left;
+  max-height: 500px;
+  overflow: hidden;
+  transition: all ease;
+  transition-duration: 1s;
+}
+
+.todo-listitem:hover{
+  background-color:beige;
+  transform: scale(1.05);
+}
+
+.todo-content{
+  text-align: left;
+  overflow-wrap: break-word;
+  max-width: 400px;
+  max-height: 20px;
+  overflow: hidden;
+  transition: all ease;
+  transition-duration: 0.5s;
+}
+
+.todoitem{
+  text-align: left;
+  overflow-wrap: break-word;
+  max-width: 400px;
+  max-height: 20px;
+  overflow: hidden;
+  transition: all ease;
+  transition-duration: 0.5s;
+}
+
+.todoitem:hover{
+  max-height: 50px;
+}
+.todoitem:focus-within{
+  max-height: 500px;
+  background-color: beige;
+}
+
+.todo-item .todo-title:hover{
+  max-height:50px;
+}
+
+.todo-item .todo-content:hover{
+  max-height: 50px;
+}
+
+.todo-item .todo-title:focus-within{
+  max-height: 100px;
+}
+.todo-item .todo-content:focus-within{
+  max-height: 500px;
+}
+
+/* Styles for the input field */
+#search{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-size: 16px;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+#search:focus {
+  border-color: 5px solid #66afe9;
+  outline: none;
+  box-shadow: 0 0 10px rgba(42, 183, 248, 0.6);
+}
+
+.inputs{
+  width: 75%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.inputs:focus{
+  border-color: rgb(228, 170, 220);
+  outline:none;
+  box-shadow: 0 0 8px rgba(233, 166, 216, 0.6);
+}
+
+.inputdiv{
+  width: 75%;
+}
+
+nav {
+  display:flex;
+  align-items: center;
+  background-color: #3e5172;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  width:34.2cm;
+  border-radius: 5px;
+  margin: auto;
+  border: 4px solid rgb(183, 234, 247);
+  position: fixed;
+  top: 0%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #b5e1f3;
+  text-decoration: none;
+  font-size: 1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color:rgb(236, 134, 214);
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav ul li a:hover,nav ul li a.active{
+  color: white;
+}
+
+nav ul li a.active::after {
+  transform: scaleX(1);
+}
+
